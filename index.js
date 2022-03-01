@@ -1,9 +1,5 @@
 function distanceFromHqInBlocks(someValue) {
-    if (someValue < 42) {
-        return 42 - someValue;
-    } else {
-        return someValue - 42;
-    }
+    return Math.abs(someValue - 42)
 }
 
 function distanceFromHqInFeet(someValue) {
@@ -12,11 +8,7 @@ function distanceFromHqInFeet(someValue) {
 }
 
 function distanceTravelledInFeet(startBlock, endBlock) {
-    if (startBlock < endBlock) {
-        return (endBlock - startBlock) * 264;
-    } else {
-        return (startBlock - endBlock) * 264;
-    }
+    return Math.abs(startBlock - endBlock) * 264
 }
 
 function calculatesFarePrice(startBlock, endBlock) {
